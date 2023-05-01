@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.jpeg" type="image/x-icon">
+    <!-- Font-Awesome(font) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Line Awesome(Icon) -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+
+    <div class="container playing">
+        <!-- Sources -->
+        <img src="" id="music-image">
+        <audio src="" id="audio"></audio>
+
+        <!-- Music Details -->
+        <div id="music-details">
+            <p class="title"></p>
+            <span>-</span>
+            <p class="singer"></p>
+        </div>
+
+        <!-- Progress -->
+        <div id="progress">
+            <input type="range" id="progress-bar">
+            <div class="times">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div id="controls">
+            <ul class="icons">
+                <li><i id="prev" class="las la-backward"></i></li>
+                <li class="play-li"><i id="play" class="las la-play"></i></li>
+                <li><i id="next" class="las la-forward"></i></li>
+            </ul>
+
+            <div class="volume-section">
+                <i class="las la-volume-up" id="volume"></i>
+                <input type="range" id="volume-bar" max="100" value="100">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/music.js"></script>
+    <script src="assets/music-player.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
